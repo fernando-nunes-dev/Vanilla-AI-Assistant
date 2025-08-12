@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla AI Assistant</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vanilla AI Assistant</h1>
+            <p>Seu assistente de IA com JavaScript puro</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="api-key-container">
+                    <label for="apiKey">Chave de API (Gemini)</label>
+                    <input type="password" id="apiKey" placeholder="Insira sua chave de API do Google AI Studio">
+                </div>
+
+                <div class="prompt-container">
+                    <label for="prompt">Sua Pergunta</label>
+                    <textarea id="prompt" rows="4" placeholder="O que você quer saber hoje?"></textarea>
+                    <button id="sendButton">
+                        <span class="button-text">Perguntar</span>
+                        <span class="button-loading hidden"><i class="fas fa-spinner fa-spin"></i></span>
+                    </button>
+                </div>
+            </section>
+
+            <section id="responseSection" class="hidden">
+                <div class="response-header">
+                    <h2>Resposta da IA</h2>
+                </div>
+                <div id="responseContent"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Desenvolvido como parte do Projeto 6.</p>
+        </footer>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
