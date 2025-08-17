@@ -1,0 +1,134 @@
+/* --- GERAL E LAYOUT --- */
+
+/*     --primary-color: #007bff;
+    --primary-hover: #0056b3;
+    --background-color: #f0f2f5;
+    --container-bg: #ffffff;
+    --text-color: #333;
+    --border-color: #ccc;
+    --error-color: #d9534f;
+ */
+ 
+ /* GERAL E LAYOUT */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../assets/image/pontos-de-conexao.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #0A0B16;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-image: url(../assets/image/cerebro-ia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin: 0;
+    color: #007bff;
+}
+
+footer {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #888;
+}
+
+/* SEÇÃO DE ENTRADA (API E PROMPT) */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="password"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 10px;
+    transition: background-color 0.4s;
+}
+
+button:hover {
+    background-color: #27415A;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+/* --- SEÇÃO DE RESPOSTA --- */
+#responseSection {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.response-header h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+#responseContent {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.6;
+}
+
+/* --- CLASSES AUXILIARES --- */
+.hidden {
+    display: none;
+}
