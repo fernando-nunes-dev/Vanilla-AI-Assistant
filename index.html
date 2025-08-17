@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanilla AI Assistant</title>
-    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
@@ -19,7 +19,7 @@
             <section class="input-section">
                 <div class="api-key-container">
                     <label for="apiKey">Chave de API (Hugging Face)</label>
-                    <input type="password" id="apiKey" placeholder="Insira sua chave de API do Google AI Studio">
+                    <input type="password" id="apiKey" placeholder="Insira seu token da Hugging Face aqui">
                 </div>
 
                 <div class="prompt-container">
@@ -35,6 +35,18 @@
             <section id="responseSection" class="hidden">
                 <div class="response-header">
                     <h2>Resposta da IA</h2>
+                    <div class="button-group">
+                        <button id="copyButton" title="Copiar Resposta">
+                            <i class="fa-solid fa-copy"></i>
+                        </button>
+                        <button id="clearButton" title="Limpar Tudo">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="prompt-display">
+                    <strong>Sua pergunta:</strong>
+                    <p id="userPrompt"></p>
                 </div>
                 <div id="responseContent"></div>
             </section>
@@ -42,7 +54,6 @@
 
         <footer>
             <p>Desenvolvido como parte do Projeto 6.</p>
-            <p>-- koru -  Boticário --</p>
         </footer>
     </div>
 

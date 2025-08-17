@@ -1,6 +1,5 @@
 // src/js/dom.js
 
-// Exporta um objeto contendo todas as referências aos elementos da página.
 export const DOM = {
     apiKeyInput: document.getElementById('apiKey'),
     promptInput: document.getElementById('prompt'),
@@ -9,4 +8,7 @@ export const DOM = {
     buttonLoading: document.querySelector('.button-loading'),
     responseSection: document.getElementById('responseSection'),
     responseContent: document.getElementById('responseContent'),
+    copyButton: document.getElementById('copyButton'),
+    clearButton: document.getElementById('clearButton'),
+    userPrompt: document.getElementById('userPrompt'),
 };
