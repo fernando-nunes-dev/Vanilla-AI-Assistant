@@ -1,19 +1,6 @@
-/* --- GERAL E LAYOUT --- */
-
-/*     --primary-color: #007bff;
-    --primary-hover: #0056b3;
-    --background-color: #f0f2f5;
-    --container-bg: #ffffff;
-    --text-color: #333;
-    --border-color: #ccc;
-    --error-color: #d9534f;
- */
- 
- /* GERAL E LAYOUT */
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(../assets/image/pontos-de-conexao.jpg);
+    background-image: url(../assets/image/tecnologia-ai.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,7 +39,6 @@ footer {
     color: #888;
 }
 
-/* SEÇÃO DE ENTRADA (API E PROMPT) */
 .input-section {
     display: flex;
     flex-direction: column;
@@ -109,7 +95,6 @@ button:disabled {
     cursor: not-allowed;
 }
 
-/* --- SEÇÃO DE RESPOSTA --- */
 #responseSection {
     background-color: #f9f9f9;
     border: 1px solid #e0e0e0;
@@ -128,7 +113,47 @@ button:disabled {
     line-height: 1.6;
 }
 
-/* --- CLASSES AUXILIARES --- */
 .hidden {
     display: none;
+}
+
+.response-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    background-color: #6c757d;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    width: auto;
+    margin-top: 0;
+}
+
+.button-group button:hover {
+    background-color: #5a6268;
+}
+
+.button-group button.copied {
+    background-color: #28a745;
+}
+
+.prompt-display {
+    margin-bottom: 15px;
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.prompt-display p {
+    margin-top: 5px;
 }

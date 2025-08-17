@@ -1,9 +1,7 @@
 // src/js/ui.js
 
-// Importa os elementos do DOM para poder manipulá-los.
 import { DOM } from './dom.js';
 
-// Exporta um objeto com funções que controlam a interface.
 export const UI = {
     setLoadingState(isLoading) {
         if (isLoading) {
@@ -17,12 +15,30 @@ export const UI = {
         }
     },
 
-    displayResponse(text) {
+    displayResponse(prompt, text) {
         DOM.responseSection.classList.remove('hidden');
+        DOM.userPrompt.textContent = prompt;
         DOM.responseContent.textContent = text;
     },
 
     displayError(message) {
-        this.displayResponse(`Erro: ${message}`);
+        this.displayResponse("Ocorreu um erro", message);
+    },
+
+    clearAll() {
+        DOM.promptInput.value = '';
+        DOM.responseSection.classList.add('hidden');
+        DOM.userPrompt.textContent = '';
+        DOM.responseContent.textContent = '';
+    },
+
+    showCopyFeedback() {
+        DOM.copyButton.innerHTML = '<i class="fa-solid fa-check"></i>';
+        DOM.copyButton.classList.add('copied');
+
+        setTimeout(() => {
+            DOM.copyButton.innerHTML = '<i class="fa-solid fa-copy"></i>';
+            DOM.copyButton.classList.remove('copied');
+        }, 2000);
     }
 };
