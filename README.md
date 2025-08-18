@@ -3,7 +3,9 @@ Um assistente de IA interativo, construído com a pureza e a força do JavaScrip
 _________________________________________________________________________________________________________________________________________
 ✨ Acesse a Demonstração Ao Vivo ✨
 ![GravaodeTela2025-08-17205833-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/46a8ae57-16f9-453a-a335-4949bdcad5f3)
-
+_________________________________________________________________________________________________________________________________________
+💻Link do projeto no Vercel:
+<a href="http://vanilla-ai-assistant.vercel.app" target="_blank">  vanilla-ai-assistant.vercel.app</a>
 _________________________________________________________________________________________________________________________________________
 🚀 Sobre o Projeto
 O Vanilla AI Assistant nasceu de um desafio: criar uma aplicação web moderna e funcional sem depender de frameworks ou bibliotecas externas. O objetivo era aprofundar o conhecimento nas tecnologias fundamentais da web — HTML5, CSS3 e JavaScript (ES6) — para construir uma interface de chat que se comunica com modelos de Inteligência Artificial de ponta.
